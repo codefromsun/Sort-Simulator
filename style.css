@@ -1,0 +1,188 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+/* Adjust individual icon spacing */
+#github-icon {
+    font-size: 1.5rem;
+    color: white;
+    margin-left: 20px;
+}
+
+#light-mode-icon {
+    font-size: 1.5rem;
+    margin-right: 20px;
+    color: white;
+}
+
+/* Centered text */
+.navbar h6 {
+    color: #f0f6fc;
+    font-size: 28px;
+    font-family: 'Arial', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0 auto;
+    padding: 6px 15px;
+    background-color: rgba(140, 147, 144, 0.247);
+    border-radius: 50px;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+    /* remove the gap so it doesn't close */
+}
+
+/* Row styling - Changed background color*/
+.controls-row {
+    background-color:#25292e;
+    /* Dark grey similar to navbar */
+    padding: 15px;
+    /* border-radius: 10px; */
+    margin-top: 0px;
+    /* remove gap*/
+    margin-bottom: 10px;
+    display: flex;
+    /* Add flex display */
+    /*justify-content: flex-end; Remove this */
+    justify-content: space-around; /* Distribute elements evenly */
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 10px; /* Space between elements */
+    align-items: center; /* Center items vertically */
+    border: 1px solid rgb(61 68 77); /* Very subtle gray */
+
+}
+
+
+/* Spacing between controls */
+.form-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    top: 6px;
+}
+
+.slider {
+    width: 150px;
+}
+
+/* Buttons styling - Set background to same as controls row */
+.btn {
+    min-width: 100px;
+    position: relative;
+    top: 0px;
+    background-color: #343a40;
+    /* Match the row color */
+    border: 1px solid transparent;
+    transition: border-bottom-color 0.3s ease;
+    color: white;
+    
+}
+
+.btn:hover {
+    border-bottom-color: #8599ab;
+    color: rgb(0, 255, 221);
+}
+
+
+
+
+#sort-btn.disable {
+    /* display: inline-block; Make it visible when the 'visible' class is added */
+    display: none; /* Initially hide the sort button */
+}
+
+#sort-btn {
+    /* background-color: #fc0000; */
+    /* margin-right: 10px; */
+    position: relative;
+    right: 30px;
+    
+    
+    
+    }
+
+    #reset-btn {
+        margin-left: 10px;
+        position: relative;
+        right: 20px;
+    }
+    .btn.dropdown-toggle {
+        border: 1px solid #6c757d;
+    color: white;
+}
+
+/* Uniform styling for text below navbar */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #212529
+}
+
+label {
+    font-weight: bold;
+    color: white;
+}
+
+/* Style for bars in the visualization */
+.bar {
+    width: 40px;
+    /* Adjust width as needed */
+    background-color: #999393;
+    /* Default bar color */
+    margin: 0 3px;
+    /* Spacing between bars */
+    display: inline-block;
+    transition: height 0.3s ease, background-color 0.3s ease;
+    /* Smooth transitions */
+}
+
+/* Style for the container holding the bars */
+#main {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 450px;
+    /* Adjust height as needed */
+    margin-top: 20px;
+    background-color: #212529
+    /* Optional background */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 992px) { /* Adjust this breakpoint as needed */
+    .col-md-2,
+    .col-md-3 {
+        width: auto; /* Remove fixed column widths */
+        flex: 1 1 auto; /* Allow columns to grow and shrink */
+        padding-left: 5px; /* Add some spacing on the left */
+        padding-right: 5px; /* Add some spacing on the right */
+
+    }
+
+    .slider {
+        width: 100%; /* Make sliders full width within their containers */
+    }
+
+    #sort-btn{
+        position: static; /* Remove fixed positioning */
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%;
+    }
+    #reset-btn {
+        position: static; /* Remove fixed positioning */
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* Make buttons full width */
+    }
+    .controls-row {
+        justify-content: center; /* Center items horizontally on smaller screens */
+    }
+}

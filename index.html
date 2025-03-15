@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Sort Simulator</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <!-- <i class="bi bi-sun-fill" id="light-mode-icon"></i> -->
+
+      <!-- Centered SORT SIMULATOR text -->
+      <h6>Sort Simulator</h6>
+
+      <!-- GitHub Icon (Right) -->
+      <a href="https://github.com/codefromsun">
+        <i class="bi bi-github" id="github-icon"></i>
+      </a>
+    </nav>
+
+    <!-- Row containing dropdown, sliders, and buttons -->
+    <div class="container-fluid">
+      <div class="row controls-row">
+        <!-- Dropdown for Sorting Algorithm -->
+        <div class="col-md-2">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Bubble Sort
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li>
+                <a class="dropdown-item" href="#" data-value="bubble"
+                  >Bubble Sort</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" data-value="selection"
+                  >Selection Sort</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" data-value="insertion"
+                  >Insertion Sort</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" data-value="merge"
+                  >Merge Sort</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href="#" data-value="quick"
+                  >Quick Sort</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Data Size Slider -->
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="data-size">Data Size:</label>
+            <input
+              type="range"
+              class="form-range slider"
+              id="data-size-slider"
+              min="1"
+              max="30"
+              value="10"
+            />
+          </div>
+        </div>
+
+        <!-- Speed Slider -->
+        <div class="col-md-3">
+          <div class="form-group">
+            <label for="speed">Speed:</label>
+
+            <input
+              type="range"
+              class="form-range slider"
+              id="speed-slider"
+              min="10"
+              max="1200"
+              value="700"
+            />
+          </div>
+        </div>
+
+        <!-- Sort and Reset Buttons -->
+        <div class="col-md-3 d-flex align-items-center gap-3">
+          <button class="btn" id="sort-btn"><b>Sort </b></button>
+          <button class="btn" id="reset-btn"><b>Reset </b></button>
+        </div>
+        <div id="main"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
