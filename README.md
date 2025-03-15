@@ -1,4 +1,6 @@
 # Sort-Simulator
+![Project Image](https://github.com/codefromsun/Sort-Simulator/blob/main/project.gif)
+> [Live demo](https://codefromsun.github.io/Sort-Simulator/)
 
 ## Overview
 
@@ -36,4 +38,11 @@ Sort-Simulator/<br>
 ├── quick.js # JavaScript file for Quick Sort implementation<br>
 └── README.md # This file
 
+## References
+
+This project was inspired by following resources 
+
+- [yt-vid](https://youtu.be/_AwSlHlpFuc?si=XxTdD71147OvL0ej)
+- [w3schools](https://en.wikipedia.org/wiki/Bubble_sort)
+- [project](https://github.com/sgoel1220/sorting-visualizer)
 
