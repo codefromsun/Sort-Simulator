@@ -43,6 +43,6 @@ Sort-Simulator/<br>
 This project was inspired by following resources 
 
 - [yt-vid](https://youtu.be/_AwSlHlpFuc?si=XxTdD71147OvL0ej)
-- [w3schools](https://en.wikipedia.org/wiki/Bubble_sort)
+- [w3schools](https://www.w3schools.com/dsa/dsa_algo_bubblesort.php)
 - [project](https://github.com/sgoel1220/sorting-visualizer)
 
